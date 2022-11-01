@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_posts"
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        android:src="@color/blacko"
+        app:layout_constraintBottom_toTopOf="@+id/postimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="8dp"
+        android:background="@drawable/blacko_shimmer"
+        android:fontFamily="@font/roboto"
+        android:gravity=""
+        android:paddingLeft="3dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_posts"
+        app:layout_constraintStart_toEndOf="@+id/avatar_posts"
+        app:layout_constraintTop_toTopOf="@+id/avatar_posts"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/name_posts"
+        android:layout_width="130dp"
+        android:layout_height="12dp"
+        android:background="@drawable/blacko_shimmer"
+        android:fontFamily="@font/roboto"
+        android:gravity=""
+        android:paddingLeft="3dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_posts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/avatar_posts"
+        app:layout_constraintTop_toTopOf="@+id/avatar_posts"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="0dp"
+        android:layout_height="490dp"
+        android:scaleType="centerCrop"
+        android:src="@color/blacko"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/caption_text"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/blacko_shimmer"
+        android:fontFamily="@font/roboto"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/comments_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <TextView
+        android:id="@+id/likecountes"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:background="@drawable/blacko_shimmer"
+        android:fontFamily="@font/roboto"
+        android:gravity="left"
+
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/caption_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <TextView
+        android:id="@+id/comments_value"
+        android:layout_width="275dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+
+        android:background="@drawable/blacko_shimmer"
+        android:fontFamily="@font/roboto"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage"
+        app:layout_constraintVertical_bias="0.089" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

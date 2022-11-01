@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Chats.HomeActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_isEmpty_home"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="503dp"-->
+<!--        android:text="Вы пока не чали беседу"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20dp"-->
+<!--        android:fontFamily="@font/roboto_light"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/recyclerHome"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView17"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:forceDarkAllowed="false"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:shimmer_auto_start="true"
+        app:shimmer_highlight_color="@color/blacko">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+            <include layout="@layout/shimmer_blacko_layout_home" />
+
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/home_photo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addperson"
+        app:layout_constraintEnd_toStartOf="@+id/main_home_text"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addperson"
+        app:srcCompat="@drawable/ic_openinnew_foreground" />
+    <TextView
+        android:id="@+id/main_home_text_progress"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Загрузка..."
+
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/main_home_text"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Chats"
+        android:visibility="invisible"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/addperson"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_openinnew_foreground" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:outlineProvider="none"
+        app:itemIconSize="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/view_bottom" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_home_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/line"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

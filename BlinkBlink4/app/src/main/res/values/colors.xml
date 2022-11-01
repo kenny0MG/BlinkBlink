@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="first">#F2F3F5</color>
+    <color name="toolbar">#121212</color>
+    <color name="line">#C4C4C4</color>
+    <color name="input">#E0E0E0</color>
+    <color name="main">#B18DFF</color>
+    <color name="second">#F2F2F2</color>
+    <color name="red">#FF1493</color>
+    <color name="blue">#0098FD</color>
+    <color name="edit">#929292</color>
+    <color name="blacko">#9A9A9A</color>
+    <color name="yellow">#fcca12</color>
+    <color name="seri">#f0f0f0</color>
+    <color name="serilight">#F1F1F3</color>
+    <color name="redlight">#D878F3</color>
+    <color name="grey">#808080</color>
+    <color name="msggrey">#C0C0C0</color>
+    <color name="colorItemLeft">#E6E4E4</color>
+    <color name="colorItemRight">#90FF91F5</color>
+    <color name="green">#4BC91D</color>
+    <color name="redSecond">#FF0507</color>
+    <color name="defoultButton">#262626</color>
+    <color name="defoultButtonLight">#F2F2F2</color>
+    <color name="backgroundRecyclerView">#ECEDF2</color>
+
+
+</resources>

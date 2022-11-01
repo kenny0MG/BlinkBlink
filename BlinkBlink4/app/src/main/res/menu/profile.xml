@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+
+            android:id="@+id/photo"
+            android:icon="@drawable/ic_app5_foreground"
+            android:title=""
+
+            />
+        <item
+            android:id="@+id/likes"
+            android:icon="@drawable/ic_izbrannoe_foreground"
+            android:title=""
+            />
+
+</menu>

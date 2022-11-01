@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BlinkBlink</string>
+    <string name="lenta"><font size="15">Лента</font></string>
+    <string name="follows"><font size="15">Подписки</font></string>
+
+
+    <string name="text_spaces">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="main_navi_item_home2"><font fontfamily="@font/roboto" size="15"><b>Подписки</b></font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_email">Enter your email</string>
+    <plurals name="count_members">
+        <item quantity="one">%d Account</item>
+        <!--        <item quantity="few">%d участника</item>-->
+        <!--        <item quantity="many">%d участников</item>-->
+        <!--        <item quantity="other">%d участников</item>-->
+    </plurals>
+    <string name="deletAny"><font fontfamily="@font/roboto" size="15"><b>Удалить у всех</b></font></string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

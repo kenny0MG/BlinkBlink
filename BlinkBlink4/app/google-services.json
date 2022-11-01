@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054937251321",
+    "project_id": "blinkblink-a11bd",
+    "storage_bucket": "blinkblink-a11bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054937251321:android:1e199ada535fe6cb1f9128",
+        "android_client_info": {
+          "package_name": "org.robotics.blinkblink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054937251321-f45ahmch8dlrq8bj8qdeot68pi9fta4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoIgnFGCcJbcxQVHsflUWvsPj3QAhBTrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054937251321-f45ahmch8dlrq8bj8qdeot68pi9fta4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

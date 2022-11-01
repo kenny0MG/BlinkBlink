@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+
+    <TextView
+        android:id="@+id/main_username"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="@font/roboto"
+        android:text="Name item"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16.5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/circle_new_message"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toEndOf="@+id/main_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <TextView
+        android:id="@+id/group_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+
+        android:paddingLeft="5dp"
+        android:text="group"
+        android:textColor="@color/blacko"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/main_username"
+        app:layout_constraintStart_toEndOf="@+id/main_username"
+        app:layout_constraintTop_toTopOf="@+id/main_username" />
+
+    <TextView
+        android:id="@+id/main_lastmsg"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:text="last message"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_send_posts"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/main_photo"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/buttonnewchat"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="28dp"-->
+    <!--        android:background="@drawable/roundbutton"-->
+    <!--        android:minHeight="0dp"-->
+    <!--        android:text="Get chat"-->
+
+
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.919"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/online"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/main_lastmsg"
+        app:layout_constraintStart_toEndOf="@+id/main_username"
+        app:layout_constraintTop_toTopOf="@+id/main_username"
+        app:srcCompat="@drawable/ic_circle_foreground" />
+
+    <ImageView
+        android:id="@+id/circle_new_message"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854"
+        app:srcCompat="@drawable/ic_circle2_foreground" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_send_posts_off"
+        android:layout_width="127dp"
+        android:layout_height="30dp"
+        android:background="@drawable/add_friends"
+        android:minHeight="0dp"
+        android:textStyle="bold"
+
+        android:text="Sent"
+
+
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_send_posts"
+        android:layout_width="127dp"
+        android:layout_height="30dp"
+        android:background="@drawable/roundbutton2"
+        android:minHeight="0dp"
+        android:textStyle="bold"
+
+        android:text="Send"
+
+
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
